@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/22d0c03d61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="website.css">
+    <script src="websitee.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+
+</head>
+<body>
+    <p id="greeting"></p>
+
+<script>
+  const date = new Date();
+  const hour = date.getHours();
+
+  let greeting;
+  if (hour < 12) {
+    greeting = "Good morning";
+  } else if (hour < 18) {
+    greeting = "Good afternoon";
+  } else {
+    greeting = "Good evening";
+  }
+
+  document.getElementById("greeting").innerHTML = greeting;
+</script>
+
+      <h1> PORTFOLIO WEBSITE</h1>
+
+      <ul class = "time">
+        <button type="button"
+  onclick="document.getElementById('demo').innerHTML = Date()">
+  Click me to display Date and Time.</button> <!-- Each you click the button current time will display on screen-->
+  </ul>
+<p id="demo"></p> 
+    <nav><!--- using nav bar -->
+        
+        <li><a href ="#intro">Intro</a></li>
+        <br>
+        <li><a href ="#education ">Education</a></li>
+    <br>
+        <li><a href ="#hobbies ">Hobbies</a></li>
+    <br>   
+        <li><a href ="#family ">Family</a></li>
+    <br>
+     <li><a href="#contact">Contact</a></li>  
+     <br>
+     <br> 
+         </nav> <br><br><br>
+         
+         <div id = "header"> 
+            <img src="shahi.JPG" alt="Aayush" style="width:50%;">
+         <p> Football Player</p>
+         <h2>Hi, i am <span>Aayush</span>  Bahadur Shahi <br> 
+            and i am 18 years old.<br> I am from NEPAL.</h2>
+         </div>
+            <!------------Intro------>
+         <div id="intro">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="Intro-col-1">
+                        <img src="aayush .JPG" alt="Aayush">
+                    </div>
+                    <div class="Intro-col-2">
+                        <h2 class ="sub-title">About me</h2>
+                        <p> Hi my name is Aayush Bahadur Shahi and i am 18 years old. My hometown is in Pokhara,Kaski but currently
+                            i am living here in Kathmandu,Budhanilkantha along with my family members.I completed my school level education from 
+                            Sainik Awasiya Mahavidayala Sallaghari,Bhaktapur and i completed my plus two level education from Southwestern 
+                            State College taking Computer Science as my major subject. Currently, I am studying BSc(Hons) computing science
+                            in Herald College Kathmandu.My skills and achivement are given below.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('achivements')">Achivements</p >
+                            </div>
+                            <div class="tab-contents active-tab" id ="skills">
+                            <ul>
+                                <li><span>Sports person</span><br> Playing Football</li>
+                                <li><span>Marketing</span><br> Email Marketing</li>
+                                <li><span>Designing</span><br> Graphics Designer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id ="achivements">
+                            <ul>
+                                <li><span>Win SAMB Cup</span><br> In Football</li>
+                                <li><span>Marketing</span><br> Email Marketing</li>
+                                <li><span>Designing</span><br> For Companies</li>
+                                <li><span>Test riding</span><br> Ride OLA Bike</li>
+                            </ul>
+                        </div >
+                    </div>
+                </div>
+            </div>
+         </div>
+         <br>
+      
+
+        <!----------------- Education ----------------->  
+     <div id = "education">
+        <div class ="container">
+        <h3> My Education</h3>
+        <div class ="work-list">
+         <div class = "work">
+            <img src="SAMB.jpg" alt="School">
+            <div class ="layer">
+                <h4> SAMB</h4>
+                <p> I completed by school level from this school</p>
+                <a href="#"><i class="fas fa-external-link"></i></a>
+            </div>
+            </div>
+            <div class = "work">
+                <img src="SWSC.png" alt="College">
+                <div class ="layer">
+                    <h4> SWSC</h4>
+                    <p> I completed by plus two level from this College</p>
+                    <a href="#"><i class="fas fa-external-link"></i></a>
+                </div>
+                </div>
+                <div class = "work">
+                    <img src="Herald.jpg" alt="University">
+                    <div class ="layer">
+                        <h4>HCK</h4>
+                        <p> I am currently studying in this University</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+         </div>
+        </div>
+        </div>
+         <!------------Hobbies ------->
+         <div id = "hobbies">
+            <div class="service">
+            <div class = "title">
+                <h4> My Hobbbies</h4>
+            </div>
+            <div class ="box">
+                <div class ="card">
+                    <i class="far fa-futbol"></i>
+                    <h6> Football</h6>
+                    <div class ="pra">
+                        <p> I really love playing football. Its my one of the favourite sports.
+                            I have already played a lot of big tournaments.
+                        </p>
+                    </div>
+                    <p style ="text-align: center;">
+                    <a class="button" href="#">Read More</a></p>
+                </div>
+                <div class ="card">
+                   <i class="fas fa-biking"></i>
+                    <h6> Cycling</h6>
+                    <div class ="pra">
+                        <p> I enjoy doing Cycling.While Cycling i really enjoy all the moments. I have ride on different cycling track</p>
+                    </div>
+                    <p style ="text-align: center;">
+                        <a class="button" href="#">Read More</a></p>
+                </div>
+                <div class ="card">
+                    <i class="fas fa-hiking"></i>
+                    <h6> Hiking</h6>
+                    <div class ="pra">
+                        <p> I really want to explore new things and new plaves by doing hiking. While hiking i really got to knew new places.</p>
+                    </div>
+                    <p style ="text-align: center;">
+                        <a class="button" href="#">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- Family-------->
+    <div id ="family">
+        <div class ="wrapper">
+            <h3> My Family</h3>
+            <div class ="team">
+                <div class="team_member">
+                        <h5>Rajendra Bdr Shahi</h5>
+                        <p class ="role"> Father</p>
+                        <p> My father name is Rajendra Bahadur Shahi. He is an Ex-Army officer.</p>
+                </div>
+                <div class="team_member">
+                <h5>Laxmi Shahi</h5>
+                        <p class ="role">Mother</p>
+                        <p> My mother name is Laxmi Shahi. She is a Housewife</p>
+                    </div>
+                <div class="team_member">
+                    <h5>Rasani Shahi</h5>
+                            <p class ="role"> Sister</p>
+                            <p> My sister name is Rasani Shahi. She is Currently a student of MBBS</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- Contact ----------->
+    <div id = "contact">
+     <div class ="container">
+        <div class ="row">
+            <div class ="contact-left">
+                <h3 class ="sub-title">Contact Me</h3>
+                <p> <i class="fas fa-envelope"></i>thakuriaayush122@gmail.com</p>
+                <p> <i class="fas fa-phone"></i>9846234602</p>
+                <div class ="social-icons">
+                    <a href="https://www.facebook.com" target ="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i> </a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/watch?v=lgeoAUvoRJU" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href ="Aayush Bdr Shahi.png" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="signin-box">
+                <form>
+                  <h3>Sign In</h3>
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                  <input type="submit" value="Sign In">
+                </form>
+              </div>
+        </div>
+    </div>
+ </div>
+ <div class="copyright">
+    <p> Copyright@2023.Made with by Aayush.</p>
+ </div>
+</div>
+
+    
+       
+             
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
